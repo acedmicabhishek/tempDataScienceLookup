@@ -48,3 +48,24 @@ Statistics is a branch of mathematics that deals with the collection, analysis, 
     - Formula: $$ P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!} $$
 - **Normal Distribution:** A continuous probability distribution that is symmetrical around the mean. It is also known as the bell curve.
     - Formula (Probability Density Function): $$ f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2} $$
+
+
+
+
+
+
+$$ f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2} $$
+
+
+
+
+
+$$ f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2} $$
+
+## test
+
+$$ f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2} $$
+
+
+
+$$ f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2} $$

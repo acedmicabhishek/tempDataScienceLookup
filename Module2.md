@@ -16,7 +16,7 @@ Statistics is a branch of mathematics that deals with the collection, analysis, 
 - **Population:** The entire group of individuals or objects that you want to study.
 - **Sample:** A subset of the population that is selected for analysis. The sample should be representative of the population so that the conclusions drawn from the sample can be generalized to the population.
 
-### 5. Measure of Central Tendency and Dispersion
+### 5. Measure of Central tendency and Dispersion
 - **Measures of Central Tendency:** Describe the center of a dataset.
     - **Mean:** The average of all the values in the dataset.
     - **Median:** The middle value in the dataset when the values are arranged in order.
@@ -44,25 +44,68 @@ Statistics is a branch of mathematics that deals with the collection, analysis, 
 ## Formulas
 
 ### 5. Measure of Central Tendency and Dispersion
-- **Mean:**
-  - Population: $$ \mu = \frac{\sum_{i=1}^{N} x_i}{N} $$
-  - Sample: $$ \bar{x} = \frac{\sum_{i=1}^{n} x_i}{n} $$
-- **Variance:**
-  - Population: $$ \sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N} $$
-  - Sample: $$ s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1} $$
-- **Standard Deviation:**
-  - Population: $$ \sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}} $$
-  - Sample: $$ s = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}} $$
+
+*   **Mean:**
+    *   Population:
+        $$
+        \mu = \frac{\sum_{i=1}^{N} x_i}{N}
+        $$
+    *   Sample:
+        $$
+        \bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}
+        $$
+*   **Variance:**
+    *   Population:
+        $$
+        \sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}
+        $$
+    *   Sample:
+        $$
+        s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}
+        $$
+*   **Standard Deviation:**
+    *   Population:
+        $$
+        \sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}}
+        $$
+    *   Sample:
+        $$
+        s = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}}
+        $$
 
 ### 6. Moments, Skewness and Kurtosis
-- **Skewness:** $$ S_k = \frac{E[(X - \mu)^3]}{(\sigma^2)^{3/2}} $$
-- **Kurtosis:** $$ K = \frac{E[(X - \mu)^4]}{(\sigma^2)^2} $$
+
+*   **Skewness:**
+    $$
+    S_k = \frac{E[(X - \mu)^3]}{(\sigma^2)^{3/2}}
+    $$
+*   **Kurtosis:**
+    $$
+    K = \frac{E[(X - \mu)^4]}{(\sigma^2)^2}
+    $$
 
 ### 7. Correlation and Regression
-- **Pearson Correlation Coefficient:** $$ r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2 \sum_{i=1}^{n} (y_i - \bar{y})^2}} $$
-- **Simple Linear Regression:** $$ y = \beta_0 + \beta_1 x + \epsilon $$
+
+*   **Pearson Correlation Coefficient:**
+    $$
+    r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2 \sum_{i=1}^{n} (y_i - \bar{y})^2}}
+    $$
+*   **Simple Linear Regression:**
+    $$
+    y = \beta_0 + \beta_1 x + \epsilon
+    $$
 
 ### 8. Theoretical Distributions
-- **Binomial Distribution:** $$ P(X=k) = \binom{n}{k} p^k (1-p)^{n-k} $$
-- **Poisson Distribution:** $$ P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!} $$
-- **Normal Distribution (Probability Density Function):** $$ f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2} $$
+
+*   **Binomial Distribution:**
+    $$
+    P(X=k) = \binom{n}{k} p^k (1-p)^{n-k}
+    $$
+*   **Poisson Distribution:**
+    $$
+    P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!}
+    $$
+*   **Normal Distribution (Probability Density Function):**
+    $$
+    f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}
+    $$

@@ -41,11 +41,12 @@ Statistics is a branch of mathematics that deals with the collection, analysis, 
 - **Moments:** A quantitative measure of the shape of a set of points. The first moment is the mean, the second moment is the variance, the third moment is the skewness, and the fourth moment is the kurtosis.
 - **Skewness:** A measure of the asymmetry of the probability distribution of a real-valued random variable about its mean.
     - Formula:
-    
+
      $$ S_k = \frac{E[(X - \mu)^3]}{(\sigma^2)^{3/2}} $$
 
 - **Kurtosis:** A measure of the "tailedness" of the probability distribution of a real-valued random variable.
     - Formula: 
+    
     $$ K = \frac{E[(X - \mu)^4]}{(\sigma^2)^2} $$
 
 ### 7. Correlation and Regression

@@ -20,21 +20,28 @@ Statistics is a branch of mathematics that deals with the collection, analysis, 
 - **Measures of Central Tendency:** Describe the center of a dataset.
     - **Mean:** The average of all the values in the dataset.
         - Formula: 
-         $$ \mu = \frac{\sum_{i=1}^{N} x_i}{N} $$ (for population), $$ \bar{x} = \frac{\sum_{i=1}^{n} x_i}{n} $$ (for sample)
+
+         $$ \mu = \frac{\sum_{i=1}^{N} x_i}{N} $$ (for population), $$ \bar{x} = \frac{\sum_{i=1}^{n} x_i}{n} $$ 
+         (for sample)
     - **Median:** The middle value in the dataset when the values are arranged in order.
     - **Mode:** The value that appears most frequently in the dataset.
 - **Measures of Dispersion:** Describe the spread of a dataset.
     - **Variance:** The average of the squared differences from the mean.
         - Formula: 
-        $$ \sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N} $$ (for population), $$ s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1} $$ (for sample)
+
+        $$ \sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N} $$ (for population), $$ s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1} $$
+         (for sample)
     - **Standard Deviation:** The square root of the variance.
         - Formula:
-         $$ \sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}} $$ (for population), $$ s = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}} $$ (for sample)
+
+         $$ \sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}} $$ (for population), $$ s = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}} $$ 
+         (for sample)
 
 ### 6. Moments, Skewness and Kurtosis
 - **Moments:** A quantitative measure of the shape of a set of points. The first moment is the mean, the second moment is the variance, the third moment is the skewness, and the fourth moment is the kurtosis.
 - **Skewness:** A measure of the asymmetry of the probability distribution of a real-valued random variable about its mean.
     - Formula:
+    
      $$ S_k = \frac{E[(X - \mu)^3]}{(\sigma^2)^{3/2}} $$
 
 - **Kurtosis:** A measure of the "tailedness" of the probability distribution of a real-valued random variable.

@@ -45,8 +45,9 @@ Statistics is a branch of mathematics that deals with the collection, analysis, 
      $$ S_k = \frac{E[(X - \mu)^3]}{(\sigma^2)^{3/2}} $$
 
 - **Kurtosis:** A measure of the "tailedness" of the probability distribution of a real-valued random variable.
-    - Formula: 
     
+     Formula: 
+
     $$ K = \frac{E[(X - \mu)^4]}{(\sigma^2)^2} $$
 
 ### 7. Correlation and Regression

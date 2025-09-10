@@ -42,6 +42,8 @@ Statistics is a branch of mathematics that deals with the collection, analysis, 
 ---
 
 ## Formulas
+## this part have some problem i tired fixing but latex gave up ig
+### works fine on vscode renderer but not on web 
 
 ### 5. Measure of Central Tendency and Dispersion
 

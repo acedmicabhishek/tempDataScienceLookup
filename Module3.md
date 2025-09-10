@@ -1,0 +1,61 @@
+# MODULE-III
+## INTRODUCTION TO MACHINE LEARNING
+
+### 1. Machine Learning
+Machine learning is a subset of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it to learn for themselves. The learning process begins with observations or data, such as examples, direct experience, or instruction, in order to look for patterns in data and make better decisions in the future based on the examples that we provide. At its core, machine learning is the process of teaching a computer system how to make accurate predictions when fed data.
+
+### 2. Types of Learning
+- **Supervised Learning:** The model learns from labeled data, which means that each data point is tagged with a correct output. The goal is to learn a mapping function that can predict the output for new, unseen data. It's like learning with a teacher providing the correct answers.
+    - **Classification:** This is a type of supervised learning where the output variable is a category, such as 'spam' or 'not spam'. The goal is to predict the categorical class labels of new instances based on past observations. Algorithms for classification include Logistic Regression, Support Vector Machines (SVM), Decision Trees, and Random Forests.
+    - **Regression:** This is a type of supervised learning where the output variable is a real or continuous value, such as 'price' or 'weight'. The goal is to predict a continuous quantity. Algorithms for regression include Linear Regression, Polynomial Regression, and Ridge Regression.
+
+- **Unsupervised Learning:** The model learns from unlabeled data, which means that there are no correct outputs to learn from. The goal is to find hidden patterns and structures in the data. It's like learning without a teacher.
+    - **Clustering:** This is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar to each other than to those in other groups. It's used for tasks like customer segmentation. A popular clustering algorithm is K-Means.
+    - **Association:** This is a rule-based machine learning method for discovering interesting relations between variables in large databases. It is intended to identify strong rules discovered in databases using some measure of interestingness. For example, "customers who buy bread also tend to buy milk".
+
+- **Reinforcement Learning:** The model learns by interacting with an environment. It receives rewards or penalties for its actions and learns to maximize its cumulative reward over time. It's like learning through trial and error. The agent learns from the consequences of its actions, rather than from being explicitly taught and selects its actions on basis of its past experiences and also by new choices.
+
+### 3. Properties of Learning Algorithms
+- **Accuracy:** The ability of the algorithm to make correct predictions. It is usually measured by a metric like accuracy score, precision, recall, or F1-score for classification tasks, and mean squared error or R-squared for regression tasks. High accuracy is a primary goal, but it must be balanced with other properties.
+- **Scalability:** The ability of the algorithm to handle large datasets. An algorithm is scalable if its performance (in terms of time and memory) doesn't degrade significantly as the size of the input data increases. This is crucial for big data applications.
+- **Robustness:** The ability of the algorithm to handle noise and outliers in the data. A robust algorithm is one that is not overly affected by small changes or errors in the input data, leading to more reliable models in real-world scenarios where data is often imperfect.
+- **Interpretability:** The ability to understand how the algorithm makes its predictions. An interpretable model is one that can be easily understood by humans, which is important for debugging, auditing, ensuring fairness, and building trust in the model's decisions, especially in critical applications like healthcare and finance.
+
+### 4. Linear Regression and Regularization
+- **Linear Regression:** A supervised learning algorithm that is used to predict a continuous output variable based on one or more input variables. It assumes a linear relationship between the input and output variables. The goal is to find the best-fitting line (or hyperplane in higher dimensions) that minimizes the sum of the squared differences between the predicted and actual values (this is called the cost function, often Mean Squared Error).
+- **Regularization:** A technique used to prevent overfitting in machine learning models. Overfitting happens when a model learns the training data too well, including its noise, and performs poorly on new, unseen data. Regularization adds a penalty term to the cost function, which discourages the model from learning overly complex patterns.
+    - **L1 Regularization (Lasso Regression):** Adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being zero, which means it can be used for feature selection.
+    - **L2 Regularization (Ridge Regression):** Adds a penalty equal to the square of the magnitude of coefficients. This tends to shrink coefficients evenly and is effective in preventing multicollinearity.
+
+### 5. Model Selection and Evaluation
+- **Model Selection:** The process of choosing the best model for a given task from a set of candidate models. This involves comparing the performance of different algorithms (e.g., SVM vs. Decision Tree) or different hyperparameters for the same algorithm. Techniques like k-fold cross-validation are used to get a more robust estimate of the model's performance on unseen data and to avoid selection bias.
+- **Model Evaluation:** The process of assessing the performance of a trained model on a held-out test dataset. This helps to ensure that the model is accurate and reliable before deploying it. Common evaluation metrics include:
+    - **Classification:**
+        - **Accuracy:** The ratio of correctly predicted instances to the total instances.
+        - **Precision:** The ratio of correctly predicted positive instances to the total predicted positive instances.
+        - **Recall (Sensitivity):** The ratio of correctly predicted positive instances to all instances in the actual positive class.
+        - **F1-score:** The harmonic mean of precision and recall.
+        - **Confusion Matrix:** A table used to describe the performance of a classification model.
+        - **ROC Curve:** A graph showing the performance of a classification model at all classification thresholds.
+    - **Regression:**
+        - **Mean Absolute Error (MAE):** The average of the absolute differences between the predicted and actual values.
+        - **Mean Squared Error (MSE):** The average of the squared differences between the predicted and actual values.
+        - **R-squared (Coefficient of Determination):** A statistical measure of how close the data are to the fitted regression line.
+
+### 6. Classification: SVM, kNN and Decision Tree
+- **Support Vector Machine (SVM):** A powerful and versatile supervised learning algorithm that can be used for both classification and regression tasks. It works by finding the optimal hyperplane that best separates the data into different classes. The hyperplane is chosen to maximize the margin (the distance between the hyperplane and the nearest data points from either class). SVMs can also handle non-linear data by using the "kernel trick" to map the data into a higher-dimensional space where a linear separator can be found.
+- **k-Nearest Neighbors (kNN):** A simple, non-parametric, and instance-based supervised learning algorithm. It works by finding the 'k' most similar data points (neighbors) in the training data and uses their class labels to predict the class for a new data point (e.g., by majority vote). It is considered a "lazy" learning algorithm because it doesn't build a model during the training phase; it simply stores the training data. The choice of 'k' and the distance metric (e.g., Euclidean distance) are important parameters.
+- **Decision Tree:** A supervised learning algorithm that works by creating a tree-like model of decisions and their possible consequences. Each internal node represents a "test" on an attribute (e.g., is color blue?), each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes). They are easy to understand and interpret, but can be prone to overfitting.
+
+### 7. Ensemble Methods: Random Forest, Naive Bayes and Logistic Regression
+- **Random Forest:** An ensemble learning method that combines multiple decision trees to make more accurate and robust predictions. It is a type of bagging (Bootstrap Aggregating) algorithm where a random subset of data and a random subset of features are used to train each tree, which introduces diversity and reduces overfitting. The final prediction is made by averaging the predictions of all the individual trees (for regression) or by majority vote (for classification).
+- **Naive Bayes:** A probabilistic classification technique based on Bayes' Theorem with a "naive" assumption of independence among predictors. In simple terms, a Naive Bayes classifier assumes that the presence of a particular feature in a class is unrelated to the presence of any other feature. Despite this often unrealistic assumption, Naive Bayes classifiers are highly scalable and can perform well in many real-world situations, especially in text classification and spam filtering.
+- **Logistic Regression:** A statistical model that in its basic form uses a logistic function (or sigmoid function) to model a binary dependent variable (i.e., a variable with two possible outcomes). It is a linear model used for classification problems. It predicts the probability of an outcome occurring. Despite its name, it is a classification algorithm, not a regression algorithm.
+
+### 8. Clustering: k-Means, Feature Engineering and Selection
+- **k-Means Clustering:** An unsupervised learning algorithm that is used to partition a dataset into 'k' distinct, non-overlapping clusters. It works by iteratively assigning each data point to the cluster with the nearest mean (cluster centroid). The algorithm converges when the assignments no longer change. The number of clusters 'k' is a hyperparameter that must be specified beforehand.
+- **Feature Engineering:** The process of using domain knowledge to create new features from existing ones to improve the performance of a machine learning model. This can involve techniques like creating polynomial features, interaction terms, binning continuous variables into categories, and applying transformations like log or square root. Good feature engineering is often the key to building a high-performing model.
+- **Feature Selection:** The process of selecting a subset of relevant features to use in a machine learning model. This can help to reduce overfitting, improve model accuracy by removing irrelevant or redundant features, and reduce training time. Common methods include filter methods (e.g., chi-squared test), wrapper methods (e.g., recursive feature elimination), and embedded methods (e.g., LASSO regularization).
+
+### 9. Dimensionality Reduction: PCA
+- **Principal Component Analysis (PCA):** An unsupervised learning algorithm that is used to reduce the dimensionality of a dataset while preserving as much of the original variance as possible. It works by finding a new set of orthogonal axes, called principal components, which are the directions of greatest variance in the data. These principal components can then be used to represent the data in a lower-dimensional space. PCA is often used for data visualization, noise reduction, and to improve the performance of other machine learning algorithms.
